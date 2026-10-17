@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3f7fb">
+  <meta name="description" content="FiMova — prosta nauka angielskich słówek dla klas 4–8. Wybierz klasę i rozdział, a potem ćwicz pisownię.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="FiMova">
+  <title>FiMova · Angielski w Twoim tempie</title>
+  <link rel="icon" type="image/png" href="./assets/icon-192.png">
+  <link rel="apple-touch-icon" href="./assets/icon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./build/styles-a2015518a8133a67.css">
+  <script src="./build/core-a2015518a8133a67.js" defer></script>
+  <script src="./build/vocabulary-a2015518a8133a67.js" defer></script>
+  <script src="./build/app-a2015518a8133a67.js" defer></script>
+</head>
+<body data-build="a2015518a8133a67">
+  <svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Zm0 0v15"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-5 5 5-5 5 5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9Z"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <img src="./build/fimova-logo-a2015518a8133a67.png" width="2128" height="396" alt="FiMova">
+        <span class="brand-caption">Angielski w Twoim tempie</span>
+      </div>
+      <button class="menu-button" id="open-options" type="button" aria-label="Otwórz opcje i pomoc">
+        <svg class="icon"><use href="#i-menu"/></svg><span>Opcje</span>
+      </button>
+    </header>
+
+    <main class="workspace" id="main">
+      <section class="progress-strip" aria-label="Postęp w wybranym zakresie">
+        <div class="progress-copy">
+          <span><span class="progress-check" aria-hidden="true">✓</span> Umiem <strong id="learned-count">0 z 10</strong></span>
+          <span class="remaining">Zostało <strong id="remaining-count">10</strong></span>
+        </div>
+        <progress id="progress" max="10" value="0" aria-label="Opanowane słówka"></progress>
+      </section>
+
+      <section class="study-card" id="study-card" aria-label="Ćwiczenie pisowni">
+        <form id="study-form" novalidate>
+          <div class="card-content">
+            <div class="question" id="question">
+              <p class="instruction" id="instruction">Napisz po angielsku</p>
+              <h1 id="prompt" tabindex="-1">Wczytywanie…</h1>
+            </div>
+            <div id="answer-zone" class="answer-zone">
+              <label for="answer">Twoja odpowiedź</label>
+              <input id="answer" name="answer" type="text" lang="en" placeholder="Wpisz słówko…"
+                autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false"
+                enterkeyhint="done" maxlength="220" aria-describedby="input-error">
+              <p id="input-error" class="input-error" hidden></p>
+            </div>
+            <div id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true" hidden>
+              <div id="feedback-mark" class="feedback-mark" aria-hidden="true"></div>
+              <p id="feedback-title" class="feedback-title"></p>
+              <p id="correct-answer" class="correct-answer" lang="en"></p>
+              <p id="feedback-note" class="feedback-note"></p>
+            </div>
+            <div id="finished" class="finished" hidden>
+              <div class="finish-icon" aria-hidden="true"><svg class="icon"><use href="#i-star"/></svg></div>
+              <h1 id="finish-title" tabindex="-1">Brawo!</h1>
+              <p id="finish-copy"></p>
+            </div>
+          </div>
+          <div class="quiz-actions">
+            <button id="skip" class="button button-soft" type="button">Nie wiem</button>
+            <button id="primary" class="button button-primary" type="submit">
+              <span id="primary-label">Sprawdź</span><svg class="icon"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <footer class="material-picker" aria-label="Wybierz materiał do nauki">
+        <label class="select-field grade-field" for="grade">
+          <span>Klasa</span>
+          <select id="grade" aria-label="Klasa">
+            <option value="4">Klasa 4</option><option value="5">Klasa 5</option>
+            <option value="6">Klasa 6</option><option value="7">Klasa 7</option>
+            <option value="8">Klasa 8</option>
+          </select>
+        </label>
+        <label class="select-field chapter-field" for="chapter">
+          <span>Rozdział</span>
+          <select id="chapter" aria-label="Rozdział"><option value="*">Wczytywanie…</option></select>
+        </label>
+      </footer>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <dialog id="options-dialog" aria-labelledby="options-title">
+    <div class="dialog-header">
+      <h2 id="options-title">Opcje i pomoc</h2>
+      <button class="icon-button" data-close type="button" aria-label="Zamknij opcje"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="dialog-body">
+      <p class="help-intro">Wpisz słówko po angielsku. Dobra odpowiedź odkłada je do opanowanych. Po błędzie zobaczysz poprawną pisownię, a słówko wróci do nauki.</p>
+      <h3>Słówka i postępy</h3>
+      <div class="options-grid">
+        <button id="open-library" class="option-button" type="button"><svg class="icon"><use href="#i-book"/></svg> Zobacz słówka</button>
+        <button id="open-txt" class="option-button" type="button"><svg class="icon"><use href="#i-upload"/></svg> Dodaj plik TXT</button>
+        <button id="backup-export" class="option-button" type="button"><svg class="icon"><use href="#i-download"/></svg> Zapisz postępy</button>
+        <button id="backup-import" class="option-button" type="button"><svg class="icon"><use href="#i-upload"/></svg> Wczytaj postępy</button>
+      </div>
+      <input id="backup-file" type="file" accept=".json,application/json" hidden>
+      <p class="muted small">Postępy są zapisane w tej przeglądarce, bez konta i bez synchronizacji. Na wspólnym komputerze zapisz własną kopię JSON po nauce.</p>
+      <p id="storage-status" class="notice" hidden></p>
+      <div class="reset-line">
+        <button id="reset-scope" class="text-button" type="button">Zacznij wybrany zakres od nowa</button>
+        <span id="scope-label" class="small muted"></span>
+      </div>
+
+      <details class="teacher-details">
+        <summary>Baza słówek i informacje dla nauczyciela</summary>
+        <p>Startowy zestaw jest przykładowy, a nie przypisany do konkretnego podręcznika. Podział na klasy jest orientacyjny.</p>
+        <p>Wspólną bazę zmieniasz w <code>data/slowka.txt</code> w projekcie. Import w aplikacji dodaje słówka tylko na tym urządzeniu.</p>
+        <button id="txt-export" class="option-button" type="button"><svg class="icon"><use href="#i-download"/></svg> Pobierz całą bazę TXT</button>
+        <button id="remove-extra" class="text-button danger" type="button">Usuń słówka dodane na tym urządzeniu</button>
+      </details>
+
+      <div class="school-about">
+        <img src="./build/finova-school-a2015518a8133a67.png" width="2048" height="396" alt="FiNova — logo szkoły">
+        <p>FiMova <strong>1.0</strong> · <span id="dataset-count">250</span> słówek<br><span id="build-label"></span></p>
+      </div>
+      <p id="connection-status" class="small muted"></p>
+      <button id="check-update" class="text-button" type="button">Sprawdź aktualizację</button>
+      <p class="small muted">Aplikacja nie wysyła odpowiedzi uczniów na serwer. Nie zawiera reklam ani zewnętrznych skryptów analitycznych.</p>
+    </div>
+  </dialog>
+
+  <dialog id="library-dialog" aria-labelledby="library-title">
+    <div class="dialog-header">
+      <h2 id="library-title">Twoje słówka</h2>
+      <button class="icon-button" data-close type="button" aria-label="Zamknij bazę"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="dialog-body">
+      <p id="library-scope" class="muted"></p>
+      <label for="search" class="sr-only">Szukaj słówka</label>
+      <input id="search" type="search" placeholder="Szukaj słówka…" autocomplete="off">
+      <p id="library-count" class="small muted"></p>
+      <div id="word-list" class="word-list"></div>
+    </div>
+  </dialog>
+
+  <dialog id="txt-dialog" aria-labelledby="txt-title">
+    <div class="dialog-header">
+      <h2 id="txt-title">Dodaj słówka z TXT</h2>
+      <button class="icon-button" data-close type="button" aria-label="Zamknij import"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="dialog-body">
+      <p>Wybierz plik lub wklej listę. Jeden wiersz to jedno słówko:</p>
+      <pre>polski;angielski;klasa;rozdział
+jabłko;apple;4;1. Jedzenie</pre>
+      <p class="small muted">Klasy: 4–8. Warianty odpowiedzi oddzielaj znakiem <code>|</code>. Plik zapisz jako UTF-8. Zmiany dotyczą tylko tego urządzenia.</p>
+      <label for="txt-file" class="button button-soft file-label">Wybierz plik .txt</label>
+      <input id="txt-file" type="file" accept=".txt,text/plain" class="file-input">
+      <label for="txt-content" class="field-label">Lista słówek</label>
+      <textarea id="txt-content" rows="5" placeholder="jabłko;apple;4;1. Jedzenie" spellcheck="false"></textarea>
+      <div id="import-summary" role="status" class="import-summary" hidden></div>
+      <button id="preview-import" class="button button-primary wide" type="button">Sprawdź listę</button>
+      <button id="commit-import" class="button button-primary wide" type="button" hidden>Dodaj do nauki</button>
+    </div>
+  </dialog>
+
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title">
+    <div class="dialog-header"><h2 id="confirm-title">Potwierdź zmianę</h2></div>
+    <div class="dialog-body">
+      <p id="confirm-copy"></p>
+      <div class="confirm-actions">
+        <button class="button button-soft" type="button" data-close>Anuluj</button>
+        <button id="confirm-action" class="button button-primary" type="button">Potwierdzam</button>
+      </div>
+    </div>
+  </dialog>
+  <noscript><div class="noscript">Włącz JavaScript w przeglądarce, aby ćwiczyć słówka.</div></noscript>
+</body>
+</html>

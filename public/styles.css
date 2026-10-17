@@ -1,0 +1,252 @@
+/* FiMova: large type, one learning card, two selectors. No external fonts. */
+:root{
+  --blue:#2568ae;--blue-dark:#164e8a;--ink:#192f46;--muted:#5b6d7f;
+  --teal:#57acc4;--mint:#99cfb8;--line:#dae4ed;--paper:#fff;
+  --background:#f3f7fb;--good:#1c6a4c;--amber:#825216;
+  --app-height:100dvh;--app-top:0px;
+  color-scheme:light;font-family:ui-rounded,"Aptos","Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  font-synthesis:none;-webkit-text-size-adjust:100%;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--background);color:var(--ink);font-size:18px;overflow:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 5% 6%,#e0edf8 0,transparent 44%),radial-gradient(ellipse at 98% 98%,#e6f2ec 0,transparent 42%);pointer-events:none}
+button,input,select,textarea{font:inherit}
+button,select{cursor:pointer}
+button{touch-action:manipulation}
+button:disabled{cursor:wait;opacity:.6}
+button,select,input,textarea{-webkit-tap-highlight-color:transparent}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #3984c9;outline-offset:4px}
+input:focus,textarea:focus{border-color:var(--blue)}
+[hidden]{display:none!important}
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.app-shell{height:var(--app-height);max-width:1200px;margin:auto;padding:24px 38px max(24px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:22px;position:relative;top:var(--app-top)}
+.app-header{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-shrink:0;min-height:60px}
+.brand{display:flex;align-items:center;gap:26px}
+.brand img{width:265px;height:auto;display:block}
+.brand-caption{font-size:15px;font-weight:600;color:var(--muted);border-left:1px solid #cedbe6;padding:8px 0 8px 22px}
+.menu-button,.icon-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line);background:#ffffffbd;border-radius:14px;color:var(--ink);min-height:46px;min-width:46px;padding:10px 16px;font-size:16px;font-weight:650}
+.menu-button:hover,.icon-button:hover,.option-button:hover{background:#edf4fb;border-color:#bad0e3}
+.workspace{display:flex;flex-direction:column;gap:18px;width:min(100%,770px);margin:0 auto;min-height:0;flex:1;justify-content:center}
+.progress-strip{flex-shrink:0;padding:0 5px}
+.progress-copy{display:flex;justify-content:space-between;gap:16px;margin-bottom:12px;font-size:17px}
+.progress-check{display:inline-flex;align-items:center;justify-content:center;width:23px;height:23px;color:var(--good);background:#dfefe6;border-radius:50%;margin-right:5px;font-size:16px;font-weight:800}
+.progress-copy strong{font-weight:750}
+.remaining{color:var(--muted)}
+.remaining strong{color:var(--ink)}
+progress{display:block;width:100%;height:8px;overflow:hidden;border:0;border-radius:8px;background:#dfe8ed;color:var(--mint)}
+progress::-webkit-progress-bar{background:#dfe8ed;border-radius:8px}
+progress::-webkit-progress-value{background:#70b99b;border-radius:8px;transition:width .25s ease}
+progress::-moz-progress-bar{background:#70b99b;border-radius:8px}
+.study-card{background:var(--paper);border:1px solid var(--line);border-radius:30px;padding:34px 40px;flex:1;min-height:0;max-height:520px;box-shadow:0 12px 40px #21466308;position:relative;transition:border-color .15s}
+.study-card.good{border-color:#8cc7ab;background:#fdfffd}
+.study-card.retry{border-color:#e6c79a}
+#study-form{height:100%;display:flex;flex-direction:column;gap:22px}
+.card-content{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;display:flex;flex-direction:column;justify-content:flex-start;padding:3px 4px;scrollbar-width:thin}
+.question{text-align:center;display:flex;flex-direction:column;justify-content:center;flex:1;min-height:min-content;gap:14px;padding:14px 0}
+.instruction{font-size:18px;color:var(--muted);font-weight:600;margin:0}
+#prompt{font-size:clamp(34px,4vw,60px);font-weight:750;letter-spacing:-1.6px;line-height:1.13;margin:0;overflow-wrap:anywhere}
+#prompt.long{font-size:clamp(30px,3.6vw,46px);letter-spacing:-1px}
+.answer-zone{margin-top:22px;flex-shrink:0}
+.answer-zone label,.field-label{display:block;font-size:17px;font-weight:650;margin-bottom:10px}
+input,textarea{width:100%;border:2px solid #d4dfe9;background:#fafdff;border-radius:15px;color:var(--ink);padding:15px 17px;min-height:54px}
+input::placeholder,textarea::placeholder{color:#718294;opacity:1}
+#answer{font-size:25px;line-height:1.35;min-height:68px}
+.input-error{font-size:14px;color:#95500e;margin:8px 0 0}
+.quiz-actions{display:flex;gap:12px;flex-shrink:0}
+.button{border:1px solid transparent;border-radius:15px;min-height:58px;padding:14px 22px;display:inline-flex;align-items:center;justify-content:center;gap:14px;font-weight:750;font-size:20px;text-decoration:none;line-height:1.2}
+.button-primary{color:white;background:var(--blue);box-shadow:0 4px 0 #1a518c}
+.button-primary:hover{background:var(--blue-dark)}
+.button-primary:active{transform:translateY(1px);box-shadow:0 2px 0 #1a518c}
+.button-soft{color:#294b68;background:#edf3f8;border-color:#d9e5ef;box-shadow:0 3px 0 #e0e8ef}
+.button-soft:hover{background:#e5eef6}
+#primary{flex:1}
+#skip{flex:0 0 29%;font-size:18px;white-space:nowrap;padding-inline:9px}
+.feedback{text-align:center;padding:10px 0 16px;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.feedback-mark{border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:27px;font-weight:750;margin:0 0 12px;background:#fff0d9;color:var(--amber)}
+.good .feedback-mark{background:#dff2e7;color:var(--good)}
+.feedback-title{margin:0 0 7px;font-size:20px;font-weight:700;color:var(--amber)}
+.good .feedback-title{color:var(--good)}
+.correct-answer{margin:0;line-height:1.17;font-weight:750;font-size:clamp(30px,3.2vw,46px);overflow-wrap:anywhere;max-width:100%}
+.feedback-note{color:var(--muted);font-size:16px;margin:12px 0 0;line-height:1.35}
+.study-card.answered .question{flex:0;padding:0 0 8px;gap:8px}
+.study-card.answered .instruction{font-size:15px}
+.study-card.answered #prompt{font-size:clamp(24px,2.5vw,32px);letter-spacing:-.5px}
+.material-picker{border-radius:22px;display:grid;grid-template-columns:175px minmax(0,1fr);gap:18px;background:#eaf1f7;padding:16px 20px;border:1px solid #dce6ee;flex-shrink:0}
+.select-field{min-width:0;display:flex;flex-direction:column;gap:7px}
+.select-field>span{font-size:15px;color:#52687e;font-weight:650}
+select{width:100%;min-height:51px;appearance:none;-webkit-appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235b7187' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;padding:10px 37px 10px 14px;border:1px solid #cad9e5;border-radius:12px;color:var(--ink);font-size:18px;font-weight:650;text-overflow:ellipsis}
+.finished{margin:auto;text-align:center;max-width:470px}
+.finish-icon{width:75px;height:75px;border-radius:24px;background:#e7f3ec;color:var(--good);margin:0 auto 20px;display:flex;align-items:center;justify-content:center}
+.finish-icon .icon{height:40px;width:40px;stroke-width:1.7}
+.finished h1{font-size:38px;line-height:1.15;margin:0 0 16px;letter-spacing:-1px}
+.finished p{color:var(--muted);line-height:1.5;margin:0;font-size:20px}
+dialog{border:1px solid #d6e2eb;background:white;color:var(--ink);border-radius:24px;padding:0;max-width:620px;width:calc(100% - 28px);max-height:calc(100dvh - 38px);box-shadow:0 24px 80px #0c284735}
+dialog::backdrop{background:#122f4c66;backdrop-filter:blur(4px)}
+.dialog-header{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:22px 26px 16px;position:sticky;top:0;background:white;z-index:2;border-bottom:1px solid #edf1f5}
+.dialog-header h2{margin:0;font-size:24px;letter-spacing:-.5px}
+.dialog-header .icon-button{padding:8px;border:0;background:#f0f5f9}
+.dialog-body{padding:22px 26px 28px;font-size:17px;line-height:1.5}
+.dialog-body>p:first-child{margin-top:0}
+.dialog-body h3{font-size:18px;margin:25px 0 12px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.options-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.option-button{display:flex;align-items:center;gap:12px;text-align:left;background:#f5f8fb;border:1px solid var(--line);border-radius:13px;padding:14px;color:var(--ink);font-size:16px;font-weight:650;min-height:58px}
+.option-button .icon{color:var(--blue);width:22px;height:22px}
+.text-button{border:0;background:none;padding:10px 0;color:var(--blue-dark);text-decoration:underline;text-underline-offset:4px;font-size:16px;text-align:left;min-height:44px}
+.reset-line{border-top:1px solid var(--line);margin-top:22px;padding-top:16px;display:flex;flex-direction:column;gap:3px}
+.teacher-details{border:1px solid var(--line);border-radius:14px;margin-top:20px;padding:15px;background:#f9fbfd}
+.teacher-details summary{font-weight:650;cursor:pointer}
+.teacher-details p{font-size:15px}
+.teacher-details .option-button{background:white;width:100%}
+.danger{color:#975229}
+.school-about{display:flex;align-items:center;gap:24px;border-top:1px solid var(--line);padding-top:24px;margin-top:24px}
+.school-about img{width:160px;height:auto}
+.school-about p{margin:0;font-size:13px;color:var(--muted)}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9em}
+pre{background:#edf3f8;padding:14px;border-radius:12px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}
+.word-list{display:flex;flex-direction:column}
+.word-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 22px;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);align-items:center;overflow-wrap:anywhere}
+.word-row .en{font-weight:700}
+.word-row .word-status{color:var(--good);font-size:20px}
+.file-label{width:100%;margin:7px 0 18px;cursor:pointer;font-size:17px}
+.file-input{position:absolute;opacity:0;width:1px;height:1px;min-height:1px;padding:0;overflow:hidden}
+.file-label:has(+ .file-input:focus-visible){outline:3px solid #3984c9;outline-offset:3px}
+textarea{font-size:16px;resize:vertical;min-height:130px;line-height:1.45}
+.import-summary{background:#eef6f2;padding:14px;border-radius:12px;font-size:15px;margin:15px 0;white-space:pre-line;overflow-wrap:anywhere}
+.import-summary.error,.notice{background:#fff3df;color:#784715}
+.wide{width:100%;margin-top:15px;font-size:18px}
+.confirm-actions{display:flex;gap:12px;margin-top:25px}
+.confirm-actions .button{flex:1;font-size:17px}
+.toast{position:fixed;z-index:100;bottom:max(18px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);max-width:min(92%,650px);background:#173d60;color:white;border-radius:14px;padding:13px 18px;font-size:16px;box-shadow:0 8px 30px #13354a22}
+.notice{padding:12px;border-radius:10px;font-size:15px}
+.noscript{position:fixed;inset:20%;z-index:10;background:white;padding:30px;border:2px solid var(--blue)}
+@media (max-width:750px){
+  .app-shell{padding:14px 18px max(14px,env(safe-area-inset-bottom));gap:15px}
+  .app-header{min-height:49px}
+  .brand img{width:218px}
+  .brand-caption{display:none}
+  .menu-button{padding:9px;min-width:44px;min-height:44px;background:transparent;border:0}
+  .menu-button span{display:none}
+  .workspace{gap:13px}
+  .progress-copy{font-size:15px;margin-bottom:9px}
+  .progress-check{width:21px;height:21px;font-size:14px}
+  progress{height:6px}
+  .study-card{border-radius:24px;padding:24px 22px;max-height:none}
+  #study-form{gap:18px}
+  .question{gap:15px}
+  .instruction{font-size:16px}
+  #prompt{font-size:40px;letter-spacing:-1px}
+  #prompt.long{font-size:32px}
+  .answer-zone{margin-top:18px}
+  .answer-zone label{font-size:16px}
+  #answer{font-size:23px;min-height:62px;padding:14px}
+  .button{min-height:55px;padding:13px 16px;font-size:19px;border-radius:13px}
+  #skip{font-size:16px;flex-basis:32%}
+  .quiz-actions{gap:10px}
+  .material-picker{grid-template-columns:111px minmax(0,1fr);gap:11px;border-radius:18px;padding:12px 13px}
+  .select-field{gap:6px}
+  .select-field>span{font-size:14px}
+  select{font-size:16px;padding-left:10px;padding-right:28px;min-height:49px;background-position:right 9px center}
+  .study-card.answered #prompt{font-size:28px}
+  .correct-answer{font-size:34px}
+  .feedback{padding:10px 0}
+  .feedback-note{font-size:15px;max-width:240px}
+  .finished h1{font-size:30px}
+  .finished p{font-size:18px}
+  .dialog-header{padding:16px 18px}
+  .dialog-body{padding:18px}
+}
+@media (max-height:650px){
+  .app-shell{padding-top:10px;padding-bottom:max(10px,env(safe-area-inset-bottom));gap:10px}
+  .app-header{min-height:42px}
+  .brand img{width:200px}
+  .workspace{gap:10px}
+  .study-card{padding:18px 20px}
+  #study-form{gap:14px}
+  .question{padding:8px 0;gap:10px}
+  #prompt{font-size:36px}
+  #prompt.long{font-size:29px}
+  .instruction{font-size:15px}
+  .answer-zone{margin-top:12px}
+  #answer{min-height:54px;padding:11px 13px}
+  .button{min-height:51px}
+  .feedback-mark{width:38px;height:38px;font-size:23px;margin-bottom:7px}
+  .feedback-title{font-size:18px}
+  .feedback-note{margin-top:9px;font-size:14px}
+  .correct-answer{font-size:30px}
+  .material-picker{padding:10px 12px}
+  .finish-icon{height:52px;width:52px;margin-bottom:15px;border-radius:16px}
+}
+@media (max-height:500px){
+  .app-shell{gap:7px;padding-top:7px;padding-bottom:7px}
+  .app-header{min-height:35px}
+  .brand img{width:165px}
+  .menu-button{min-height:35px;padding:4px}
+  .workspace{gap:7px}
+  .progress-copy{margin-bottom:6px;font-size:13px}
+  .progress-check{display:none}
+  .study-card{padding:12px 16px;border-radius:18px}
+  #study-form{gap:9px}
+  .question{padding:2px 0;gap:5px}
+  #prompt,#prompt.long{font-size:28px}
+  .instruction{font-size:13px}
+  .answer-zone{margin-top:8px}
+  .answer-zone label{font-size:14px;margin-bottom:5px}
+  #answer{min-height:46px;font-size:20px;padding:9px 12px}
+  .button{min-height:46px;padding:10px 12px;font-size:17px}
+  .select-field{gap:3px}
+  .select-field>span{font-size:12px}
+  .material-picker{padding:8px 10px;gap:8px}
+  select{min-height:43px;font-size:15px;padding-top:8px;padding-bottom:8px}
+  .feedback-mark{display:none}
+  .feedback{padding:4px 0}
+  .feedback-note{font-size:13px;margin-top:5px}
+  .feedback-title{font-size:16px;margin-bottom:4px}
+  .correct-answer{font-size:27px}
+  .study-card.answered #prompt{font-size:23px}
+  .finished h1{font-size:27px}
+  .finished p{font-size:16px}
+  .finish-icon{display:none}
+}
+body.keyboard .app-header{display:none}
+body.keyboard .workspace{gap:8px}
+body.keyboard .material-picker{padding:6px 10px}
+body.keyboard .select-field>span{display:none}
+body.keyboard .material-picker select{min-height:42px}
+body.keyboard .progress-strip{padding:0 3px}
+body.keyboard .study-card{padding:13px 16px}
+body.keyboard #study-form{gap:10px}
+body.keyboard .question{padding:0;gap:4px}
+body.keyboard .instruction{font-size:13px}
+body.keyboard #prompt,body.keyboard #prompt.long{font-size:27px}
+body.keyboard .answer-zone{margin-top:8px}
+body.keyboard .answer-zone label{font-size:13px;margin-bottom:5px}
+body.keyboard #answer{font-size:20px;min-height:45px;padding:8px 12px}
+body.keyboard .button{min-height:45px;font-size:17px;padding:10px 13px}
+@media (max-width:350px){
+  .app-shell{padding-left:12px;padding-right:12px}
+  .study-card{padding-left:16px;padding-right:16px}
+  .options-grid{grid-template-columns:1fr}
+  .material-picker{grid-template-columns:100px minmax(0,1fr)}
+  .brand img{width:190px}
+  .school-about{gap:14px}
+  .school-about img{width:130px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;scroll-behavior:auto!important;animation:none!important}
+}
+
+/* Short screens: the spelling, not the decoration, gets the space. */
+@media (max-height:730px){
+  .study-card.answered .question{padding-bottom:2px;gap:5px}
+  .study-card.answered .instruction{font-size:13px}
+  .study-card.answered #prompt{font-size:24px;line-height:1.15}
+  .feedback-mark{display:none}
+  .feedback{padding:4px 0}
+  .feedback-title{font-size:17px;margin-bottom:5px}
+  .correct-answer{font-size:28px}
+  .feedback-note{font-size:13px;margin-top:7px;max-width:none}
+}

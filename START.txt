@@ -1,0 +1,24 @@
+FiMova 1.0 — kompletna aplikacja
+
+SZYBKI PODGLĄD: otwórz fimova-demo.html na komputerze.
+
+PUBLIKACJA:
+Build command: node tools/build.cjs
+Build output directory: public
+Root directory: katalog zawierający data, public i tools.
+
+Jeżeli w Cloudflare Root directory jest puste — wgraj zawartość paczki
+do głównego katalogu repozytorium.
+Jeżeli Root directory to slowko-start — wgraj ją do środka slowko-start.
+
+Nie trzeba kasować repozytorium, projektu Cloudflare ani danych przeglądarki.
+Instrukcja: README.md. Baza: data/slowka.txt.
+Po wdrożeniu sprawdź /wersja.json: FiMova, 250 fiszek, 5 klas.
+
+Nowy format TXT:
+polski;angielski | alternatywa;klasa;rozdział
+
+Przykład:
+plecak;schoolbag | backpack;4;1. W szkole
+
+Baza jest przykładowa, bez przypisania do konkretnego podręcznika.

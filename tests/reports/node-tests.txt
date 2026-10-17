@@ -1,0 +1,472 @@
+TAP version 13
+# Subtest: metadata shows FiMova, 250 cards, 5 grades and 25 chapters
+ok 1 - metadata shows FiMova, 250 cards, 5 grades and 25 chapters
+  ---
+  duration_ms: 2.362806
+  type: 'test'
+  ...
+# Subtest: built HTML refers only to existing local assets
+ok 2 - built HTML refers only to existing local assets
+  ---
+  duration_ms: 2.307931
+  type: 'test'
+  ...
+# Subtest: repeated builds produce the same content version
+ok 3 - repeated builds produce the same content version
+  ---
+  duration_ms: 251.341847
+  type: 'test'
+  ...
+# Subtest: scripts, stylesheet and logos are versioned
+ok 4 - scripts, stylesheet and logos are versioned
+  ---
+  duration_ms: 1.266147
+  type: 'test'
+  ...
+# Subtest: standalone preview has no external scripts/styles/images or SW
+ok 5 - standalone preview has no external scripts/styles/images or SW
+  ---
+  duration_ms: 2.814316
+  type: 'test'
+  ...
+# Subtest: input disables spellcheck and autocorrection
+ok 6 - input disables spellcheck and autocorrection
+  ---
+  duration_ms: 0.293292
+  type: 'test'
+  ...
+# Subtest: selectors use grade and chapter, not old page filters
+ok 7 - selectors use grade and chapter, not old page filters
+  ---
+  duration_ms: 0.307295
+  type: 'test'
+  ...
+# Subtest: public app uses independent progress namespace
+ok 8 - public app uses independent progress namespace
+  ---
+  duration_ms: 0.310188
+  type: 'test'
+  ...
+# Subtest: manifest has correctly sized supplied local icons
+ok 9 - manifest has correctly sized supplied local icons
+  ---
+  duration_ms: 1.72444
+  type: 'test'
+  ...
+# Subtest: 250 sample cards, grades 4-8, 5 chapters of 10 each
+ok 10 - 250 sample cards, grades 4-8, 5 chapters of 10 each
+  ---
+  duration_ms: 32.183783
+  type: 'test'
+  ...
+# Subtest: accepted exact variant: "cat"
+ok 11 - accepted exact variant: "cat"
+  ---
+  duration_ms: 0.739358
+  type: 'test'
+  ...
+# Subtest: accepted exact variant: "CAT"
+ok 12 - accepted exact variant: "CAT"
+  ---
+  duration_ms: 0.12815
+  type: 'test'
+  ...
+# Subtest: accepted exact variant: " cat "
+ok 13 - accepted exact variant: " cat "
+  ---
+  duration_ms: 0.225523
+  type: 'test'
+  ...
+# Subtest: accepted exact variant: "  KiTtY  "
+ok 14 - accepted exact variant: "  KiTtY  "
+  ---
+  duration_ms: 0.178327
+  type: 'test'
+  ...
+# Subtest: reject typo or unspecified variant: ""
+ok 15 - reject typo or unspecified variant: ""
+  ---
+  duration_ms: 0.300705
+  type: 'test'
+  ...
+# Subtest: reject typo or unspecified variant: " "
+ok 16 - reject typo or unspecified variant: " "
+  ---
+  duration_ms: 0.248987
+  type: 'test'
+  ...
+# Subtest: reject typo or unspecified variant: "cats"
+ok 17 - reject typo or unspecified variant: "cats"
+  ---
+  duration_ms: 0.085549
+  type: 'test'
+  ...
+# Subtest: reject typo or unspecified variant: "caat"
+ok 18 - reject typo or unspecified variant: "caat"
+  ---
+  duration_ms: 1.011175
+  type: 'test'
+  ...
+# Subtest: reject typo or unspecified variant: "the cat"
+ok 19 - reject typo or unspecified variant: "the cat"
+  ---
+  duration_ms: 1.148695
+  type: 'test'
+  ...
+# Subtest: reject typo or unspecified variant: "dog"
+ok 20 - reject typo or unspecified variant: "dog"
+  ---
+  duration_ms: 0.274725
+  type: 'test'
+  ...
+# Subtest: reject typo or unspecified variant: "kat"
+ok 21 - reject typo or unspecified variant: "kat"
+  ---
+  duration_ms: 0.34133
+  type: 'test'
+  ...
+# Subtest: reject typo or unspecified variant: null
+ok 22 - reject typo or unspecified variant: null
+  ---
+  duration_ms: 0.059172
+  type: 'test'
+  ...
+# Subtest: normalize multiple spaces, curly apostrophe, unicode hyphen only
+ok 23 - normalize multiple spaces, curly apostrophe, unicode hyphen only
+  ---
+  duration_ms: 0.252762
+  type: 'test'
+  ...
+# Subtest: TXT accepts BOM, CRLF, comments, Klasa 4
+ok 24 - TXT accepts BOM, CRLF, comments, Klasa 4
+  ---
+  duration_ms: 0.295095
+  type: 'test'
+  ...
+# Subtest: duplicate rows merge explicit variants
+ok 25 - duplicate rows merge explicit variants
+  ---
+  duration_ms: 2.453388
+  type: 'test'
+  ...
+# Subtest: IDs stable across reordering and additional variants
+ok 26 - IDs stable across reordering and additional variants
+  ---
+  duration_ms: 1.636674
+  type: 'test'
+  ...
+# Subtest: grades and chapters have separate progress IDs
+ok 27 - grades and chapters have separate progress IDs
+  ---
+  duration_ms: 0.334905
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: empty
+ok 28 - reject invalid TXT: empty
+  ---
+  duration_ms: 0.805316
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: wrong fields
+ok 29 - reject invalid TXT: wrong fields
+  ---
+  duration_ms: 0.357227
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: grade 3
+ok 30 - reject invalid TXT: grade 3
+  ---
+  duration_ms: 0.091993
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: grade 9
+ok 31 - reject invalid TXT: grade 9
+  ---
+  duration_ms: 0.062538
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: old page format
+ok 32 - reject invalid TXT: old page format
+  ---
+  duration_ms: 0.159267
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: empty chapter
+ok 33 - reject invalid TXT: empty chapter
+  ---
+  duration_ms: 0.39107
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: empty answer
+ok 34 - reject invalid TXT: empty answer
+  ---
+  duration_ms: 0.143081
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: empty variant
+ok 35 - reject invalid TXT: empty variant
+  ---
+  duration_ms: 0.285143
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: invalid UTF-8
+ok 36 - reject invalid TXT: invalid UTF-8
+  ---
+  duration_ms: 0.120953
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: long prompt
+ok 37 - reject invalid TXT: long prompt
+  ---
+  duration_ms: 0.225591
+  type: 'test'
+  ...
+# Subtest: reject invalid TXT: too large
+ok 38 - reject invalid TXT: too large
+  ---
+  duration_ms: 0.051209
+  type: 'test'
+  ...
+# Subtest: TXT errors report original line and prevent partial import
+ok 39 - TXT errors report original line and prevent partial import
+  ---
+  duration_ms: 0.704578
+  type: 'test'
+  ...
+# Subtest: TXT round trip preserves IDs, classes, chapters, accents, variants
+ok 40 - TXT round trip preserves IDs, classes, chapters, accents, variants
+  ---
+  duration_ms: 10.023025
+  type: 'test'
+  ...
+# Subtest: correct removes card; wrong and skip keep it
+ok 41 - correct removes card; wrong and skip keep it
+  ---
+  duration_ms: 3.140056
+  type: 'test'
+  ...
+# Subtest: already learned card cannot be counted twice
+ok 42 - already learned card cannot be counted twice
+  ---
+  duration_ms: 0.494654
+  type: 'test'
+  ...
+# Subtest: unknown verdict rejected
+ok 43 - unknown verdict rejected
+  ---
+  duration_ms: 0.783801
+  type: 'test'
+  ...
+# Subtest: reset only affects its scope
+ok 44 - reset only affects its scope
+  ---
+  duration_ms: 0.632066
+  type: 'test'
+  ...
+# Subtest: shuffled queue visits every unseen card before repeating
+ok 45 - shuffled queue visits every unseen card before repeating
+  ---
+  duration_ms: 0.82393
+  type: 'test'
+  ...
+# Subtest: retry is random but not immediate when other cards remain
+ok 46 - retry is random but not immediate when other cards remain
+  ---
+  duration_ms: 0.633845
+  type: 'test'
+  ...
+# Subtest: queue removes mastered cards even if already queued
+ok 47 - queue removes mastered cards even if already queued
+  ---
+  duration_ms: 0.23882
+  type: 'test'
+  ...
+# Subtest: single failed card repeats until mastered
+ok 48 - single failed card repeats until mastered
+  ---
+  duration_ms: 0.589754
+  type: 'test'
+  ...
+# Subtest: repeated retry calls never duplicate queue IDs
+ok 49 - repeated retry calls never duplicate queue IDs
+  ---
+  duration_ms: 0.275081
+  type: 'test'
+  ...
+# Subtest: empty scope returns no question
+ok 50 - empty scope returns no question
+  ---
+  duration_ms: 0.66663
+  type: 'test'
+  ...
+# Subtest: backup restores correct, mistaken and private cards
+ok 51 - backup restores correct, mistaken and private cards
+  ---
+  duration_ms: 1.010027
+  type: 'test'
+  ...
+# Subtest: initial empty backup is valid
+ok 52 - initial empty backup is valid
+  ---
+  duration_ms: 0.352019
+  type: 'test'
+  ...
+# Subtest: reject corrupt backup: foreign app
+ok 53 - reject corrupt backup: foreign app
+  ---
+  duration_ms: 1.385902
+  type: 'test'
+  ...
+# Subtest: reject corrupt backup: invalid grade
+ok 54 - reject corrupt backup: invalid grade
+  ---
+  duration_ms: 0.360365
+  type: 'test'
+  ...
+# Subtest: reject corrupt backup: negative counter
+ok 55 - reject corrupt backup: negative counter
+  ---
+  duration_ms: 0.418115
+  type: 'test'
+  ...
+# Subtest: reject corrupt backup: counter type
+ok 56 - reject corrupt backup: counter type
+  ---
+  duration_ms: 0.644271
+  type: 'test'
+  ...
+# Subtest: reject corrupt backup: invalid date
+ok 57 - reject corrupt backup: invalid date
+  ---
+  duration_ms: 0.355184
+  type: 'test'
+  ...
+# Subtest: reject corrupt backup: learned without correct attempt
+ok 58 - reject corrupt backup: learned without correct attempt
+  ---
+  duration_ms: 0.311163
+  type: 'test'
+  ...
+# Subtest: reject corrupt backup: malformed extra list
+ok 59 - reject corrupt backup: malformed extra list
+  ---
+  duration_ms: 1.96269
+  type: 'test'
+  ...
+# Subtest: reject prototype-related progress keys
+ok 60 - reject prototype-related progress keys
+  ---
+  duration_ms: 0.745432
+  type: 'test'
+  ...
+# Subtest: reject malformed JSON
+ok 61 - reject malformed JSON
+  ---
+  duration_ms: 0.309258
+  type: 'test'
+  ...
+# Subtest: natural chapter ordering
+ok 62 - natural chapter ordering
+  ---
+  duration_ms: 2.714922
+  type: 'test'
+  ...
+# Subtest: precache installs a complete matching shell and versioned JS
+ok 63 - precache installs a complete matching shell and versioned JS
+  ---
+  duration_ms: 65.660555
+  type: 'test'
+  ...
+# Subtest: failed install removes partial new cache, does not activate
+ok 64 - failed install removes partial new cache, does not activate
+  ---
+  duration_ms: 7.047557
+  type: 'test'
+  ...
+# Subtest: HTML/worker deployment mismatch rejects install
+ok 65 - HTML/worker deployment mismatch rejects install
+  ---
+  duration_ms: 4.28519
+  type: 'test'
+  ...
+# Subtest: navigation fetches network first
+ok 66 - navigation fetches network first
+  ---
+  duration_ms: 8.820712
+  type: 'test'
+  ...
+# Subtest: offline navigation uses saved canonical shell
+ok 67 - offline navigation uses saved canonical shell
+  ---
+  duration_ms: 8.166967
+  type: 'test'
+  ...
+# Subtest: index.html alias also receives clean canonical response offline
+ok 68 - index.html alias also receives clean canonical response offline
+  ---
+  duration_ms: 8.351798
+  type: 'test'
+  ...
+# Subtest: new HTML does not overwrite the old offline shell
+ok 69 - new HTML does not overwrite the old offline shell
+  ---
+  duration_ms: 9.029508
+  type: 'test'
+  ...
+# Subtest: no cache and no network produce informative 503
+ok 70 - no cache and no network produce informative 503
+  ---
+  duration_ms: 2.260901
+  type: 'test'
+  ...
+# Subtest: quota errors do not break online navigation
+ok 71 - quota errors do not break online navigation
+  ---
+  duration_ms: 3.363909
+  type: 'test'
+  ...
+# Subtest: diagnostics, external requests and POST are not intercepted
+ok 72 - diagnostics, external requests and POST are not intercepted
+  ---
+  duration_ms: 3.621934
+  type: 'test'
+  ...
+# Subtest: activation keeps one older app cache and other apps untouched
+ok 73 - activation keeps one older app cache and other apps untouched
+  ---
+  duration_ms: 3.652008
+  type: 'test'
+  ...
+# Subtest: immutable asset available with network disabled
+ok 74 - immutable asset available with network disabled
+  ---
+  duration_ms: 5.045846
+  type: 'test'
+  ...
+# Subtest: ready status reflects actual cached shell
+ok 75 - ready status reflects actual cached shell
+  ---
+  duration_ms: 5.680764
+  type: 'test'
+  ...
+# Subtest: followed HTTP redirect is rebuilt as a navigation-safe response
+ok 76 - followed HTTP redirect is rebuilt as a navigation-safe response
+  ---
+  duration_ms: 98.29922
+  type: 'test'
+  ...
+# Subtest: refuse cross-origin followed redirects
+ok 77 - refuse cross-origin followed redirects
+  ---
+  duration_ms: 1.304193
+  type: 'test'
+  ...
+1..77
+# tests 77
+# suites 0
+# pass 77
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 499.786125

@@ -1,0 +1,5 @@
+# FiMova — przykład importu UTF-8
+# polski;angielski | alternatywa;klasa;rozdział
+pomarańcza;orange;4;6. Dodatkowe jedzenie
+truskawka;strawberry;4;6. Dodatkowe jedzenie
+sprawdzić odpowiedź;check the answer | check an answer;8;6. Zwroty szkolne

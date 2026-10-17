@@ -1,0 +1,37 @@
+{
+  "aplikacja": "FiMova",
+  "wersja": "1.0",
+  "build": "a2015518a8133a67",
+  "liczbaFiszek": 250,
+  "liczbaKlas": 5,
+  "liczbaRozdzialow": 25,
+  "klasy": [
+    {
+      "klasa": 4,
+      "slowka": 50,
+      "rozdzialy": 5
+    },
+    {
+      "klasa": 5,
+      "slowka": 50,
+      "rozdzialy": 5
+    },
+    {
+      "klasa": 6,
+      "slowka": 50,
+      "rozdzialy": 5
+    },
+    {
+      "klasa": 7,
+      "slowka": 50,
+      "rozdzialy": 5
+    },
+    {
+      "klasa": 8,
+      "slowka": 50,
+      "rozdzialy": 5
+    }
+  ],
+  "zrodlo": "data/slowka.txt",
+  "commit": null
+}

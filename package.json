@@ -1,0 +1,12 @@
+{
+  "name": "fimova",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FiMova — angielskie słówka dla klas 4–8",
+  "scripts": {
+    "build": "node tools/build.cjs",
+    "test": "node --test tests/*.test.cjs",
+    "start": "node tools/serve.cjs"
+  },
+  "engines": {"node": ">=20"}
+}

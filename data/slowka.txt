@@ -1,0 +1,306 @@
+# FiMova 1.0 — baza przykładowa dla klas 4–8 (UTF-8)
+# Format: polskie hasło;angielska odpowiedź | alternatywa;klasa;rozdział
+# To zestaw demonstracyjny, a nie lista z konkretnego podręcznika.
+# Poziomy klas są orientacyjne. Nauczyciel może dowolnie zmienić przypisanie.
+# Jedna linia = jedna fiszka. Klasa: 4, 5, 6, 7 lub 8. Rozdział: dowolna nazwa.
+# Po edycji uruchom node tools/build.cjs. Plik zastępuje bazę projektu.
+
+# Klasa 4 / 1. W szkole
+plecak;schoolbag | backpack;4;1. W szkole
+książka;book;4;1. W szkole
+zeszyt;notebook | exercise book;4;1. W szkole
+długopis;pen;4;1. W szkole
+ołówek;pencil;4;1. W szkole
+gumka do ścierania;rubber | eraser;4;1. W szkole
+linijka;ruler;4;1. W szkole
+piórnik;pencil case;4;1. W szkole
+biurko;desk;4;1. W szkole
+nauczyciel;teacher;4;1. W szkole
+
+# Klasa 4 / 2. Rodzina i przyjaciele
+mama;mother | mum | mom;4;2. Rodzina i przyjaciele
+tata;father | dad;4;2. Rodzina i przyjaciele
+siostra;sister;4;2. Rodzina i przyjaciele
+brat;brother;4;2. Rodzina i przyjaciele
+babcia;grandmother | grandma;4;2. Rodzina i przyjaciele
+dziadek;grandfather | grandpa;4;2. Rodzina i przyjaciele
+kuzyn lub kuzynka;cousin;4;2. Rodzina i przyjaciele
+ciocia;aunt;4;2. Rodzina i przyjaciele
+wujek;uncle;4;2. Rodzina i przyjaciele
+przyjaciel;friend;4;2. Rodzina i przyjaciele
+
+# Klasa 4 / 3. Kolory i ubrania
+czerwony;red;4;3. Kolory i ubrania
+niebieski;blue;4;3. Kolory i ubrania
+zielony;green;4;3. Kolory i ubrania
+żółty;yellow;4;3. Kolory i ubrania
+biały;white;4;3. Kolory i ubrania
+czarny;black;4;3. Kolory i ubrania
+koszulka;T-shirt | t shirt | tee shirt;4;3. Kolory i ubrania
+buty;shoes;4;3. Kolory i ubrania
+spodnie;trousers | pants;4;3. Kolory i ubrania
+sukienka;dress;4;3. Kolory i ubrania
+
+# Klasa 4 / 4. Zwierzęta
+pies;dog;4;4. Zwierzęta
+kot;cat;4;4. Zwierzęta
+królik;rabbit;4;4. Zwierzęta
+chomik;hamster;4;4. Zwierzęta
+koń;horse;4;4. Zwierzęta
+krowa;cow;4;4. Zwierzęta
+owca;sheep;4;4. Zwierzęta
+ptak;bird;4;4. Zwierzęta
+ryba;fish;4;4. Zwierzęta
+żółw;turtle | tortoise;4;4. Zwierzęta
+
+# Klasa 4 / 5. Jedzenie
+jabłko;apple;4;5. Jedzenie
+banan;banana;4;5. Jedzenie
+chleb;bread;4;5. Jedzenie
+masło;butter;4;5. Jedzenie
+ser;cheese;4;5. Jedzenie
+jajko;egg;4;5. Jedzenie
+mleko;milk;4;5. Jedzenie
+woda;water;4;5. Jedzenie
+sok;juice;4;5. Jedzenie
+kanapka;sandwich;4;5. Jedzenie
+
+# Klasa 5 / 1. Mój dzień
+budzić się;wake up;5;1. Mój dzień
+wstawać z łóżka;get up;5;1. Mój dzień
+myć zęby;brush your teeth | brush my teeth | brush teeth;5;1. Mój dzień
+jeść śniadanie;have breakfast | eat breakfast;5;1. Mój dzień
+iść do szkoły;go to school;5;1. Mój dzień
+odrabiać pracę domową;do homework | do your homework | do my homework;5;1. Mój dzień
+wracać do domu;come home | go home | get home;5;1. Mój dzień
+jeść kolację;have dinner | eat dinner | have supper | eat supper;5;1. Mój dzień
+brać prysznic;have a shower | take a shower;5;1. Mój dzień
+iść spać;go to bed;5;1. Mój dzień
+
+# Klasa 5 / 2. Dom i pokoje
+kuchnia;kitchen;5;2. Dom i pokoje
+sypialnia;bedroom;5;2. Dom i pokoje
+łazienka;bathroom;5;2. Dom i pokoje
+salon;living room | sitting room;5;2. Dom i pokoje
+jadalnia;dining room;5;2. Dom i pokoje
+ogród;garden;5;2. Dom i pokoje
+okno;window;5;2. Dom i pokoje
+drzwi;door;5;2. Dom i pokoje
+szafa na ubrania;wardrobe | closet;5;2. Dom i pokoje
+lodówka;fridge | refrigerator;5;2. Dom i pokoje
+
+# Klasa 5 / 3. Sport i hobby
+grać w piłkę nożną;play football | play soccer;5;3. Sport i hobby
+grać w koszykówkę;play basketball;5;3. Sport i hobby
+jeździć na rowerze;ride a bike | ride a bicycle | cycle;5;3. Sport i hobby
+pływać;swim;5;3. Sport i hobby
+tańczyć;dance;5;3. Sport i hobby
+rysować;draw;5;3. Sport i hobby
+czytać książki;read books;5;3. Sport i hobby
+słuchać muzyki;listen to music;5;3. Sport i hobby
+robić zdjęcia;take photos | take photographs | take pictures;5;3. Sport i hobby
+grać w szachy;play chess;5;3. Sport i hobby
+
+# Klasa 5 / 4. W mieście
+biblioteka;library;5;4. W mieście
+kino;cinema | movie theater | movie theatre;5;4. W mieście
+szpital;hospital;5;4. W mieście
+dworzec kolejowy;train station | railway station;5;4. W mieście
+przystanek autobusowy;bus stop;5;4. W mieście
+supermarket;supermarket;5;4. W mieście
+poczta;post office;5;4. W mieście
+muzeum;museum;5;4. W mieście
+basen;swimming pool;5;4. W mieście
+plac zabaw;playground;5;4. W mieście
+
+# Klasa 5 / 5. Pogoda i pory roku
+słoneczny;sunny;5;5. Pogoda i pory roku
+deszczowy;rainy;5;5. Pogoda i pory roku
+pochmurny;cloudy;5;5. Pogoda i pory roku
+wietrzny;windy;5;5. Pogoda i pory roku
+śnieżny;snowy;5;5. Pogoda i pory roku
+gorący;hot;5;5. Pogoda i pory roku
+zimny;cold;5;5. Pogoda i pory roku
+wiosna;spring;5;5. Pogoda i pory roku
+lato;summer;5;5. Pogoda i pory roku
+jesień;autumn | fall;5;5. Pogoda i pory roku
+
+# Klasa 6 / 1. Podróże
+lotnisko;airport;6;1. Podróże
+bilet;ticket;6;1. Podróże
+paszport;passport;6;1. Podróże
+walizka;suitcase;6;1. Podróże
+bagaż;luggage | baggage;6;1. Podróże
+pasażer;passenger;6;1. Podróże
+mapa;map;6;1. Podróże
+podróż;journey | trip;6;1. Podróże
+zwiedzać;go sightseeing | sightsee;6;1. Podróże
+rezerwować pokój;book a room | reserve a room;6;1. Podróże
+
+# Klasa 6 / 2. Zakupy
+cena;price;6;2. Zakupy
+tani;cheap | inexpensive;6;2. Zakupy
+drogi;expensive;6;2. Zakupy
+rozmiar;size;6;2. Zakupy
+przymierzać;try on;6;2. Zakupy
+płacić gotówką;pay in cash | pay cash;6;2. Zakupy
+płacić kartą;pay by card | pay with a card;6;2. Zakupy
+paragon;receipt;6;2. Zakupy
+klient;customer;6;2. Zakupy
+sprzedawca;shop assistant | sales assistant | salesperson;6;2. Zakupy
+
+# Klasa 6 / 3. Zdrowie
+ból głowy;headache | a headache;6;3. Zdrowie
+ból zęba;toothache | a toothache;6;3. Zdrowie
+ból brzucha;stomach ache | stomachache | a stomach ache;6;3. Zdrowie
+ból gardła;sore throat | a sore throat;6;3. Zdrowie
+gorączka;fever | a fever | high temperature | a high temperature;6;3. Zdrowie
+kaszel;cough | a cough;6;3. Zdrowie
+przeziębienie;cold | a cold;6;3. Zdrowie
+lekarz;doctor;6;3. Zdrowie
+dentysta;dentist;6;3. Zdrowie
+odpoczywać;rest | have a rest | take a rest;6;3. Zdrowie
+
+# Klasa 6 / 4. Przyroda
+las;forest | woods;6;4. Przyroda
+rzeka;river;6;4. Przyroda
+jezioro;lake;6;4. Przyroda
+góra;mountain;6;4. Przyroda
+wyspa;island;6;4. Przyroda
+plaża;beach;6;4. Przyroda
+morze;sea;6;4. Przyroda
+wodospad;waterfall;6;4. Przyroda
+pustynia;desert;6;4. Przyroda
+dolina;valley;6;4. Przyroda
+
+# Klasa 6 / 5. Technologia
+ekran;screen;6;5. Technologia
+klawiatura;keyboard;6;5. Technologia
+mysz komputerowa;mouse | computer mouse;6;5. Technologia
+słuchawki;headphones;6;5. Technologia
+ładowarka;charger;6;5. Technologia
+hasło dostępu;password;6;5. Technologia
+strona internetowa;website | web page | webpage;6;5. Technologia
+wiadomość;message;6;5. Technologia
+pobierać plik;download a file | download;6;5. Technologia
+wyszukiwać w internecie;search online | search the internet | search the web;6;5. Technologia
+
+# Klasa 7 / 1. Charakter i emocje
+uczciwy;honest;7;1. Charakter i emocje
+cierpliwy;patient;7;1. Charakter i emocje
+odpowiedzialny;responsible;7;1. Charakter i emocje
+hojny;generous;7;1. Charakter i emocje
+nieśmiały;shy;7;1. Charakter i emocje
+pewny siebie;confident | self-confident;7;1. Charakter i emocje
+zazdrosny;jealous;7;1. Charakter i emocje
+dumny;proud;7;1. Charakter i emocje
+zmartwiony;worried;7;1. Charakter i emocje
+rozczarowany;disappointed;7;1. Charakter i emocje
+
+# Klasa 7 / 2. Nauka i plany
+zdać egzamin;pass an exam | pass the exam;7;2. Nauka i plany
+nie zdać egzaminu;fail an exam | fail the exam;7;2. Nauka i plany
+powtarzać materiał do egzaminu;revise for an exam | study for an exam;7;2. Nauka i plany
+robić notatki;take notes | make notes;7;2. Nauka i plany
+rozwiązać problem;solve a problem | solve the problem;7;2. Nauka i plany
+osiągnąć cel;achieve a goal | reach a goal | achieve your goal;7;2. Nauka i plany
+podjąć decyzję;make a decision;7;2. Nauka i plany
+poprawić się;improve;7;2. Nauka i plany
+starać się ze wszystkich sił;do your best | do my best;7;2. Nauka i plany
+wybrać;choose;7;2. Nauka i plany
+
+# Klasa 7 / 3. Kultura i media
+powieść;novel;7;3. Kultura i media
+autor;author | writer;7;3. Kultura i media
+bohater opowieści;character;7;3. Kultura i media
+publiczność;audience;7;3. Kultura i media
+wystawa;exhibition;7;3. Kultura i media
+występ;performance;7;3. Kultura i media
+recenzja;review;7;3. Kultura i media
+nagłówek;headline;7;3. Kultura i media
+reklama;advertisement | advert | ad;7;3. Kultura i media
+wiarygodny;reliable | trustworthy;7;3. Kultura i media
+
+# Klasa 7 / 4. Środowisko
+zanieczyszczenie;pollution;7;4. Środowisko
+chronić środowisko;protect the environment;7;4. Środowisko
+oszczędzać wodę;save water;7;4. Środowisko
+przetwarzać odpady;recycle waste | recycle;7;4. Środowisko
+wyrzucać;throw away;7;4. Środowisko
+zagrożony gatunek;endangered species | an endangered species;7;4. Środowisko
+zmiana klimatu;climate change;7;4. Środowisko
+energia odnawialna;renewable energy;7;4. Środowisko
+plastikowa torba;plastic bag | a plastic bag;7;4. Środowisko
+sadzić drzewa;plant trees;7;4. Środowisko
+
+# Klasa 7 / 5. Relacje
+dogadywać się z;get on with | get along with;7;5. Relacje
+kłócić się z;argue with;7;5. Relacje
+przepraszać;apologise | apologize | say sorry;7;5. Relacje
+wybaczać;forgive;7;5. Relacje
+ufać;trust;7;5. Relacje
+wspierać;support;7;5. Relacje
+dzielić się;share;7;5. Relacje
+dotrzymać obietnicy;keep a promise | keep your promise;7;5. Relacje
+zapraszać;invite;7;5. Relacje
+czuć się samotnie;feel lonely;7;5. Relacje
+
+# Klasa 8 / 1. Nauka i praca
+ubiegać się o pracę;apply for a job;8;1. Nauka i praca
+rozmowa kwalifikacyjna;job interview | a job interview;8;1. Nauka i praca
+doświadczenie zawodowe;work experience;8;1. Nauka i praca
+umiejętności;skills;8;1. Nauka i praca
+kwalifikacje;qualifications;8;1. Nauka i praca
+zarabiać pieniądze;earn money;8;1. Nauka i praca
+praca na część etatu;part-time job | a part-time job;8;1. Nauka i praca
+wolontariusz;volunteer;8;1. Nauka i praca
+pracodawca;employer;8;1. Nauka i praca
+pracownik;employee;8;1. Nauka i praca
+
+# Klasa 8 / 2. Podróże i usługi
+zarezerwować lot;book a flight;8;2. Podróże i usługi
+odwołany lot;cancelled flight | canceled flight | a cancelled flight | a canceled flight;8;2. Podróże i usługi
+opóźnienie;delay;8;2. Podróże i usługi
+odjazd lub odlot;departure;8;2. Podróże i usługi
+przyjazd lub przylot;arrival;8;2. Podróże i usługi
+zakwaterowanie;accommodation;8;2. Podróże i usługi
+złożyć skargę;make a complaint | complain;8;2. Podróże i usługi
+zgubić drogę;get lost | lose your way;8;2. Podróże i usługi
+poprosić o wskazanie drogi;ask for directions;8;2. Podróże i usługi
+ubezpieczenie podróżne;travel insurance;8;2. Podróże i usługi
+
+# Klasa 8 / 3. Świat i społeczeństwo
+prawa człowieka;human rights;8;3. Świat i społeczeństwo
+równość;equality;8;3. Świat i społeczeństwo
+niepodległość;independence;8;3. Świat i społeczeństwo
+organizacja charytatywna;charity | charitable organisation | charitable organization;8;3. Świat i społeczeństwo
+zbierać pieniądze na cel społeczny;raise money | raise funds;8;3. Świat i społeczeństwo
+ubóstwo;poverty;8;3. Świat i społeczeństwo
+bezdomny;homeless;8;3. Świat i społeczeństwo
+społeczność;community;8;3. Świat i społeczeństwo
+szanować;respect;8;3. Świat i społeczeństwo
+brać udział w;take part in | participate in;8;3. Świat i społeczeństwo
+
+# Klasa 8 / 4. Opinie i argumenty
+moim zdaniem;in my opinion;8;4. Opinie i argumenty
+zgadzam się z tobą;I agree with you;8;4. Opinie i argumenty
+nie zgadzam się;I disagree;8;4. Opinie i argumenty
+z jednej strony;on the one hand;8;4. Opinie i argumenty
+z drugiej strony;on the other hand;8;4. Opinie i argumenty
+na przykład;for example | for instance;8;4. Opinie i argumenty
+w rezultacie;as a result;8;4. Opinie i argumenty
+chociaż;although | though | even though;8;4. Opinie i argumenty
+jednak;however;8;4. Opinie i argumenty
+zamiast;instead of;8;4. Opinie i argumenty
+
+# Klasa 8 / 5. Przydatne zwroty
+nie poddawać się;not give up | never give up | keep trying;8;5. Przydatne zwroty
+czekać z niecierpliwością na;look forward to;8;5. Przydatne zwroty
+opiekować się;look after | take care of;8;5. Przydatne zwroty
+dowiedzieć się;find out;8;5. Przydatne zwroty
+skończyć się (o zapasie);run out;8;5. Przydatne zwroty
+odkładać na później;put off | postpone;8;5. Przydatne zwroty
+wymyślić pomysł;come up with an idea;8;5. Przydatne zwroty
+radzić sobie z;deal with | cope with;8;5. Przydatne zwroty
+odnieść sukces w;succeed in;8;5. Przydatne zwroty
+wykorzystać okazję;take an opportunity | take the opportunity | seize an opportunity | seize the opportunity;8;5. Przydatne zwroty
